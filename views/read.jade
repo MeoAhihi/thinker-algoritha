@@ -19,7 +19,7 @@ block content
                     each header in headers 
                         td= value[header]
                     td
-                        form.d-inline(action="#Update", method="get") 
+                        form.d-inline(action=updatePage, method="get") 
                             button.btn.btn-primary(type="submit") Update
-                        form.d-inline(action="#Delete", method="get") 
+                        form.d-inline(action=deleteRoute, method="post") 
                             button.btn.btn-danger(type="submit") Delete
